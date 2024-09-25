@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(coffe1.jpeg);
+    /* background: linear-gradient(rgba(202,21,21,0.7),rgba(204,27,27,0.7)), url(bluebla.jpeg); */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+.nav-bar .title{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* ADDING THE COLOR */
+span{
+    color: blueviolet;
+}
+.nav-bar p{
+   position: absolute;
+   margin-top: 80px;
+   margin-left: 50px;
+   color: white;
+   font-size: 20px;
+   font-weight: 400;
+   cursor: pointer;
+}
+.menu li{
+    list-style:none;
+    display: inline-block;
+}
+/* ADDING TRANSISTION(Seconds to move to another) */
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 27px;
+    margin-left: 25px;
+    transition: 1s ease;
+}
+/* ADDING PURPLE COLOR AND BOX */
+.menu li a:hover{
+    color: blueviolet;
+    padding: 5px 10px;
+    border: 8px solid white;
+}
+/* SECTION BODY BELOW */
+.Home{
+    height: 400px;
+    padding: 80px;
+}
+.title-1{
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+
+}
+.Home p{
+   color: rgb(182, 134, 227); 
+   font-size: 40px;
+   padding-top: 10px;
+}
+/* BUTTON PART */
+.Home button{
+    height: 40px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 18px;
+    padding: 5px 50px;
+    margin-top: 50px;
+    border: none;
+    border-radius:50px ;
+    transition: 4s ease;
+    cursor: pointer;
+}
+.Home button:hover{
+    background: none;
+    border: 7px solid blueviolet;
+}
+@media(max-width:320px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .title{
+        position: relative;
+        top:-30px;
+        float: left;
+    }
+    .nav-bar a{
+        position: absolute;
+            margin-top: -10px;
+            margin-left: 50px;
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+        }
+        ..nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0px;
+        }
+        
+        .nav-bar .title {
+            color: white;
+            font-size: 50px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo">
+                    <a href="#">
+                        <!-- <div style="background-color: yellow;"> -->
+                            <img src="coooffee2.jpeg" alt="Logo">
+                        </div>
+                    </a>
+                </li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="Services.html">SERVICES</a></li>
+                    <li><a href="Collections.html">COLLECTIONS</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BODY OF THE WORK(COPIED) -->
+    <section class="home">
+        <div class="fine-man">
+            <div class="content">
+                <h2>AROMA AVENUE'S COFFEE</h2>
+                <p>Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG. Completely
+                    open
+                    source, MIT
+                    licensed and built by Ionic
+                </p>
+                <a href="#">Get Started</a>
+
+            </div>
+            <!-- LOGIN BOX -->
+            <div class="wrapper-login">
+                <h2>MEMBER LOGIN</h2>
+                <form>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required />
+                        <label>Enter your email</label>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required />
+                        <label>Enter your password</label>
+
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">
+                            Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register-link">
+                        <p>Not a member <a href="#">Sign
+                                up now </a></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+</body>
+
+</html>

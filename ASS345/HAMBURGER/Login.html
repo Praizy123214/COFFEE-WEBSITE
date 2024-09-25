@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with login page</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><ion-icon name="cafe"></ion-icon> Coffee</a>
+        <nav class="nav">
+            <a href="#">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#">MENU</a>
+            <a href="#">REVIEWS</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="content">
+            <h2>Coffee Build Your Mind</h2>
+            <p>Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG. Completely open
+                source, MIT
+                licensed and built by Ionic </p>
+            <a href="#">Get Started</a>
+
+        </div>
+        <!-- LOGIN BOX -->
+         <div class="wrapper-login">
+            <h2>MEMBER LOGIN</h2>
+            <form >
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required />
+                    <label>Enter your email</label>
+
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" placeholder="enter password" required />
+                    <label>Enter your password</label>
+                
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                    Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" 
+                class="btn">Login</button>
+                <div class="register-link">
+                 <p>Not a member <a href="#">Sign
+                    up now </a></p>   
+                </div>
+            </form>
+
+         </div>
+
+         
+
+    </section>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

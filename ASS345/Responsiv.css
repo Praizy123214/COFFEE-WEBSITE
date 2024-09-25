@@ -1,0 +1,161 @@
+/* universal selector */
+* {
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    /* background-color: transparent; */
+}
+
+/* STYLING FOR EXAMPLE ONE */
+.example-one {
+    width: 100%;
+    background-color: aqua;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.eg-one-container-one {
+    width: 48%;
+    display: flex;
+
+}
+
+.eg-one-container-one a {
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 700;
+    margin: 0 20px;
+
+}
+
+.eg-one-container-two {
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.eg-one-container-two button {
+    margin-right: 20px;
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 1rem;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1.5s;
+}
+
+.eg-one-container-two button:hover {
+    background-color: lawngreen;
+    color: 8px solid lawngreen;
+    border: 1px solid lightcoral;
+
+}
+
+.eg-one-container-three {
+    display: none;
+}
+
+/* RESOPONSIVENESS */
+/* TABLET */
+
+@media only screen and (max-width: 768px) {
+
+    /* Remove this in tablet and mobile view */
+    .eg-one-container-one {
+        display: none;
+
+    }
+
+    .eg-one-container-two {
+        display: none;
+    }
+
+    /* Add this in tablet amd mobile view */
+    .eg-one-container-three {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20%;
+    }
+
+    .eg-one-container-three button {
+        /* margin-right: 20px; */
+        padding: 10px 30px;
+        color: white;
+        background-color: rgb(177, 15, 15);
+        border: none;
+        border-radius: 1rem;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 1.5s;
+    }
+
+    .eg-one-container-three button:hover {
+        background-color: white;
+        color: 8px solid rgb(177, 15, 15);
+        border: 1px solid rgb(177, 15, 15);
+    }
+
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 425px) {
+    .eg-one-container-three button {
+        padding: 7px 14px;
+        border: none;
+        border-radius: .5rem;
+        font-size: large;
+        font-weight: 500;
+    }
+}
+
+/* STYLING FOR EXAMPLE TWO */
+.example-two {
+    width: 100%;
+    background-color: aqua;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.eg-two-container-one {
+    width: 100%;
+}
+
+.eg-two-content {
+    width: 100%;
+    padding: 30px 5px;
+    border-bottom: 1.2px solid mediumseagreen;
+    background-color: aliceblue;
+}
+
+.content-one {
+    border-right: 1px solid darkgoldenrod;
+
+}
+
+.content-two {
+    border-left: 1px solid darkgoldenrod;
+}
+
+@media only screen and (max-width:768px) {
+.example-two {
+        width: 100%;
+        background-color: aqua;
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+    

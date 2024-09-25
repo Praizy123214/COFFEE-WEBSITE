@@ -1,0 +1,55 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: brown;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.Show-bar1 {
+    text-decoration: none;
+    padding: 14px 14px;
+    text-align: center;
+    color: olive;
+    display: inline-block
+}
+
+li a:hover,
+.Show-bar:hover .Show-bar1 {
+    background-color: lawngreen;
+    cursor: pointer;
+}
+
+li.Show-bar {
+    display: inline-block;
+}
+
+.Show-bar2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.Show-bar2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.Show-bar2 a:hover {
+    background-color: orangered;
+}
+
+.Show-bar:hover .Show-bar2 {
+    display: block;
+}
