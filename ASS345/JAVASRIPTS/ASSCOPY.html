@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function Add()
+      {
+        var no1,no2,no3,result;
+        no1=parseInt(f1.t1.value);
+        no2=parseInt(f1.t2.value);
+        no3=parseInt(f1.t3.value);
+
+        result=no1+no2+no3;
+        f1.t4.value=result;
+      }
+
+
+      function subtract()
+      {
+        t1.t4.value=parseInt(f1.t1.value)- parseInt(f1.t2.value)- parseInt(f1.t3.value)
+      }
+
+      function mean(arr) {
+        let sum = arr.reduce((a, b) => a + b, 0);
+        return sum/arr.length;
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <form name="f1">
+
+        ASSIGNMENT <br> <br> <br>
+        Enter first value: <input type="text" name="t1">
+        <br>
+        Enter second value: <input type="text" name="t2">
+
+        <br>
+        Enter third value: <input type="text" name="t3">
+        <br>
+
+        Result : <input type="text" name="t4">
+        <br>
+        <input type="button" value="+" onclick="Add()">
+        <input type="button" value="-" onclick="subtract()">
+        <input type="button" value="*" onclick=
+        "f1.t4.value=parseInt(f1.t1.value) * parseInt(f1.t2.value) *parseInt(f1.t3.value)">
+        <input type="button" value="/" onclick=
+        "f1.t4.value=parseInt(f1.t1.value) / parseInt(f1.t2.value) / parseInt(f1.t3.value)">
+        <input type="button" value="%" onclick=
+        "f1.t4.value=parseInt(f1.t1.value) % parseInt(f1.t2.value) % parseInt(f1.t3.value)">
+    </form>
+  </body>
+</html>

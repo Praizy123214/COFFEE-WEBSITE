@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function Add() {8
+        var no1, no2, result;
+        no1 = parseInt(f1.t1.value);
+        no2 = parseInt(f1.t2i.value);
+        result = no1 + no2;
+        f1.t3.value = result;
+      }
+
+      function subtract() {
+        t1.t3.value = parseInt(f1.t1.value) - parseInt(f1.t2.value);
+      }
+
+      
+    </script>
+  </head>
+
+  <body>
+    ASSIGNMENT <br> <br>
+    <form name="f1">
+      Enter first value: <input type="text" name="t1" />
+      <br />
+      Enter second value: <input type="text" name="t2" />
+      <br />
+      Result : <input type="text" name="t3" />
+      <br />
+      <input type="button" value="+" onclick="Add()" />
+      <input type="button" value="-" onclick="subtract()" />
+      <input
+        type="button"
+        value="*"
+        onclick="f1.t3.value=parseInt(f1.t1.value) * parseInt(f1.t2.value)"
+      />
+      <input
+        type="button"
+        value="/"
+        onclick="f1.t3.value=parseInt(f1.t1.value) / parseInt(f1.t2.value)"
+      />
+      <input
+        type="button"
+        value="%"
+        onclick="f1.t3.value=parseInt(f1.t1.value) % parseInt(f1.t2.value)"
+      />
+    </form>
+  </body>
+</html>

@@ -180,14 +180,14 @@ header {
 
 /* MEDIA QUERY */
 @media(max-width: 768pX) {
-    .fine-man {
+    /* .fine-man {
         position: relative;
         width: 100%;
         height: auto;
         /* padding: 80px 10px 0; */
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+        /* display: grid; */
+        /* grid-template-columns: 1fr; */
+    /* } */
 }
 
 /* SECTION BODY */
@@ -520,6 +520,7 @@ form {
     display: flex;
     /* box-sizing: 30px; */
     border-radius: 50px;
+    margin:0 100px;
     /* background-image: var(--color2); */
 }
 
@@ -550,7 +551,7 @@ form .fa-search {
     padding: 10px 20px;
     color: #777;
 
-    /* }
+ }
 
 
 
@@ -570,8 +571,8 @@ form .fa-search {
     }
 
     form button {
-        background: #202020;
-        padding: 10px 50px;
+        /* background: #202020; */
+        padding: 10px 10px;
         border: none;
         outline: none;
         color: #fff;

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="Multiplicationtable.js" type="text/javascript"></script> -->
+  </head>
+  <body>
+    <h2>MULTIPLICATION TABLE</h2>
+
+    <div id="multiplication-table"></div>
+
+    <script>
+      var number = parseInt(prompt('Enter a number :'));
+
+      for (i = 0; i <=20; i++) {
+        document.getElementById('multiplication-table').innerHTML += 
+        `${number} * ${i} = ${number*i}<br>`;
+      }
+    </script>
+  </body>
+</html>

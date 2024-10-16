@@ -490,3 +490,95 @@ header {
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+
+
+
+footer {
+    background-color: black;
+    /* background-color: rgba(0, 0, 0, .7); */
+    /* blend your image */
+    background-blend-mode: darken;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 20px 30px 20px;
+}
+
+/* SOCAIL MEDIA ICONS */
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* TO INCREASE THE SOCIAL MEDIA ICON BUTTON */
+.socialicons a i {
+    font-size: 1cm;
+    color: black;
+    opacity: 0.9;
+}
+
+/* HOVER EFFECTS ON SOCIAL MEDIA ICONS */
+.socialicons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+
+}
+
+/* SECOND PART 2 */
+
+.footernav {
+    margin: 20px 0;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footernav ul li a {
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover {
+    opacity: 1;
+}
+
+/* THIRD PART 3 */
+.footerbutton {
+    background-color: rgb(87, 53, 9);
+    padding: 20px;
+    text-align: center;
+
+}
+
+.footerbutton p {
+    color: #fff;
+}
+
+.Designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}

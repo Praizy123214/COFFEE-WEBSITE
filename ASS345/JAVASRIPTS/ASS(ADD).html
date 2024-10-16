@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <link rel="stylesheet" href=""> -->
+    <script>
+      function calculateSum(){
+        var x = document.getElementById('number1').value;
+        var y = document.getElementById('number2').value;
+        var w = document.getElementById('number3').value;
+
+        var z = Number(x) + Number(y) + Number(w) ;
+        console.log(z);
+      }
+    </script>
+
+    <h2>Javascript Program</h2>
+
+    <p>Enter Value 1: <input type="number" id="number1" /></p>
+
+    <p>Enter Value 2: <input type="number" id="number2" /></p>
+
+    <p>Enter Value 3: <input type="number" id="number3" /></p>
+
+    <button type="button" onclick="calculateSum();">Calculate sum</button>
+  </body>
+</html>
