@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="abd.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Guess the Number!</h1>
+      <p>Guess a number between 1 and 50.</p>
+      <div id="result" class="result"></div>
+      <input type="number" id="guess-input" placeholder="Enter a number" />
+      <button id="guess-button" onclick="checkGuess()">Guess</button>
+      <p id="attempts">Attempts left: <span>10</span></p>
+      <button id="reset-button" onclick="resetGame()" style="display: none">
+        Play Again
+      </button>
+    </div>
+    <script src="abd.js"></script>
+  </body>
+</html>

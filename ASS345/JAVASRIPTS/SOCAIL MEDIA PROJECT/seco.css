@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.metric {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.metric h2 {
+  margin: 0;
+}
+
+.metric .count {
+  font-size: 2em;
+}
+
+.feed {
+  margin-top: 20px;
+}
+
+.feed h2 {
+  margin-bottom: 10px;
+}
+
+#feed-list {
+  list-style: none;
+  padding: 0;
+}
+
+#feed-list li {
+  background: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}

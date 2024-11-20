@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="second.css" />
+  </head>
+  <body>
+    <div id="quiz-container">
+      <h1>Quiz Game</h1>
+      <div id="timer"><span id="time">30</span> seconds remaining</div>
+      <div id="question-container">
+        <p id="question">Question will appear here</p>
+        <div id="choices">
+          <!-- Choices will be injected dynamically here -->
+        </div>
+      </div>
+      <div id="result-container" class="hidden">
+        <h2 id="result-message">You Failed!</h2>
+        <button id="restart-button">Restart</button>
+      </div>
+    </div>
+
+    <script src="java.js"></script>
+  </body>
+</html>

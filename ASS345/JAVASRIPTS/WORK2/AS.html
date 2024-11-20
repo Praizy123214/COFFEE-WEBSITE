@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Class Method</h1>
+    <p>Pass a parameter into the "age()" method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      class Car {
+        constructor(name, year, month) {
+          this.name = name;
+          this.year = year;
+          this.month = month;
+        }
+        age(x, m) {
+          let ageInYears = x - this.year;
+          let monthsDifference = m - this.month;
+          return monthsDifference < 0 ? ageInYears - 1 : ageInYears;
+        }
+      }
+
+      const date = new Date();
+      let year = date.getFullYear();
+      let month = date.getMonth() + 1; // Get current month (1-based index)
+
+      const myCar = new Car("Honda", 2021, 7); // July 2021
+
+      document.getElementById("demo").innerHTML =
+        "My " + myCar.name + " is " + myCar.age(year, month) + " years old.";
+    </script>
+  </body>
+</html>
